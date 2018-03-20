@@ -1,0 +1,20 @@
+8月25实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月25日（今天）完成的工作和学习如下：
+	1、催收报表SQL全部完成，待联调、测试；
+	2、理旧代码：
+	代码规范：
+		a.Controller应极少出现servletRequest，map，json，可读性会很差，应封装成Bean或Vo。
+		b.异常捕捉可以用AOP，切点在controller，底层向上抛出，统一返回带有异常信息的Bean或Vo。
+		c.controller的门面Bean和Vo也不应该传入到下层，要做必要转换，Log常打在service层。
+
+	3、单点登录原理学习
+		SSO是一种统一认证和授权机制，指访问同一服务器不同应用中的受保护资源的同一用户，只需要登录一次，即通过一个应用中的安全验证后，再访问其他应用中的受保护资源时，不再需要重新登录验证。
+		可以利用sessionId实现一个验证用的token。
+
+		框架：CAS、Shiro
+
+8月26日（明天）工作计划：
+
+	砸蛋

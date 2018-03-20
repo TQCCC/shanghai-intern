@@ -1,0 +1,10 @@
+7月18实习生工作日报-唐庆昌
+
+7月18日（今天）完成的工作和学习如下：
+	SQL编写;
+	学习payment和dataMarket业务逻辑；
+	学习jenkins+git+maven+shell持续化集成，为将来的需求做准备；
+7月19日（明天）工作计划：
+	继续写SQL
+	学习hadoop、hive；	
+	搭建测试jenkins；

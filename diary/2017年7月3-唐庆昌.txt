@@ -1,0 +1,21 @@
+﻿7月3实习生工作日报-唐庆昌
+
+7月3日（今天）完成的工作和学习如下：
+	1、模板项目生成其它项目的python脚本，已经完成
+		https://github.com/TQCCC/huixianProjectConverter
+
+		使用方法：
+		1、python3.6环境
+		2、py hpc.py -src_project_keyword(原来项目关键字，如：demo) -target_project_keyword(生成项目的关键字，如：payment) -project_dir(项目路径)
+
+	有待改进：
+		# TODO 生成另一份新项目，而不是直接修改原来项目内容，思路：可以巧妙调用git pull命令
+		# TODO 可以删除/忽略无关文件夹，如IDE或git生成的.git等等
+
+	2、消息模块的编写。
+
+7月4日（明天）工作计划：
+	编写huixian-core项目中消息模块的测试程序
+	练习linux shell
+
+	

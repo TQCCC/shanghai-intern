@@ -1,0 +1,13 @@
+8月15实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月15日（今天）完成的工作和学习如下：
+	kpi报表需求查询、插入数据bug修复，全部完成。
+	Java assistant项目螺丝帽短信推送服务
+	
+	ES进一步学习：
+	term、match、match_phrase区别；
+	条件查询中minimum_should_count含义；
+	聚合doc_min_count含义
+8月16日（明天）工作计划：
+	Java assistant项目短信发送失败策略编写

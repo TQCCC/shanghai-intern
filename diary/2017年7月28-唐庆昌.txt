@@ -1,0 +1,30 @@
+7月28实习生工作日报-唐庆昌
+
+7月28日（今天）完成的工作和学习如下：
+	linux笔记：
+	启动后台进程：nohup your-cmd &，默认stdout和stderr都输出到./nohup.txt；
+	ps -ef查看所有进程，可获取进程号，netstat -nap|grep pid查看其占用端口号；
+	kill -9 pid杀死进程；
+
+	SQL笔记：
+	遇到子查询可以用with...as提速。
+
+	CAT源码阅读，修改告警内容：
+		cat-home模块中：
+			freemaker文件定义了警告内容模板，主要字段有date、name、type等；
+			RuleType枚举类中定义了添加content内容的逻辑
+
+	好用工具总结：
+		unirest：方便发送http请求；
+		lombok：对于工程中的各种model，POJO、DTO、VO等，可以省去写getter、setter、hashCode、toString等重复代码。
+
+	elastic search入门学习：
+		restful风格接口、速度快
+		添加、修改、删除、搜索接口
+
+
+7月29日（明天）工作计划：
+	ES、Hadoop、HiveQL学习
+	CAT源码阅读，争取实现自定义告警内容
+
+

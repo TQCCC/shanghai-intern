@@ -1,0 +1,11 @@
+7月14实习生工作日报-唐庆昌
+
+7月14日（今天）完成的工作和学习如下：
+	dubbo进一步学习
+	Springboot，SpringMVC进阶学习
+	
+7月15日（明天）工作计划：
+	尝试用zookeeper实现分布式锁
+	学习Hadoop、hive、dubbo、redis
+	细心查看payment项目源码
+

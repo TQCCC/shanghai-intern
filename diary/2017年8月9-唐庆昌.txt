@@ -1,0 +1,6 @@
+8月9实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月9日（今天）完成的工作和学习如下：
+	总结了ES
+	开始编写ES服务

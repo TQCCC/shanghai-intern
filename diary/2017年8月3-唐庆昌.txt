@@ -1,0 +1,49 @@
+8月3实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月3日（今天）完成的工作和学习如下：
+	SQL行转列：
+		case when...then...
+		pivot（MySQL中没有）
+
+	elasticsearch总结：
+		ES致力于从海量的数据中搜索数据，大量的日志、网页、邮箱等等，关键就是搜索。
+
+		1、应用场景：
+			统计
+			站内搜索
+			实时查询
+			NoSQL
+			DSL(json)查询方式、json返回结果和restful的接口在这些场景下，很受欢迎。
+
+		2、难易程度、学习成本：
+			对开发人员学习成本不算很高；
+			有学习成本，熟悉了SQL的业务人员会难以理解json查询方式，如果实施起来，可能需要技术同学进行一下过滤：
+			ES查询方式和SQL比较简单总结参见：
+				https://github.com/TQCCC/internship-diary/blob/master/diary/2017%E5%B9%B47%E6%9C%8831-%E5%94%90%E5%BA%86%E6%98%8C.txt
+			ES中文社区在线教程：
+				https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html
+
+		3、效率、价格：
+			bulk api（批量插入接口）插入速率：一秒插入3千条左右
+			参考：
+			http://zhousheng29.iteye.com/blog/2101889
+			http://blog.csdn.net/xiamizy/article/details/38225931
+
+
+			增量同步速率、全量同步速率还在评估；
+		
+		我们的项目任务：
+			从神策数据仓库（hadoop、hive）定时获取数据，清洗加工，放到mysql，
+			提供业务人员用方便的方式（SQL、开关）查询业务数据、报表。
+
+		ES对我们项目的好处和缺点：
+			好处：
+				完全免费，接口简单；
+				ES查询速度快，可以完成实时查询的需求，可以考虑将清洗出来的数据导入ES，提供业务人员查询。
+				histogram聚合功能可以方便地把统计数据转换成图形和图表
+			缺点：
+				稍有学习成本，数据可读性差，需要处理json字符串
+
+8月4日（明天）工作计划：
+	ES评估

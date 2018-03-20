@@ -1,0 +1,24 @@
+8月11实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月11日（今天）完成的工作和学习如下：
+	data-market项目maven冲突解决：
+	netty版本问题：zookeeper和CAT用了低版本的netty3.x，而ES包用netty4.x，
+	可以选择用pom的exclusion解决冲突，
+	好在ES的Client提供设置使用低版本netty：
+	Settings settings = Settings.builder()
+                    .put("cluster.name", "elasticsearch")
+                    .put("transport.type","netty3")
+                    .put("http.type", "netty3")
+                    .build();
+    问题解决！
+
+    ES条件DSL查询服务基本完成。
+    ES条件DSL查询服务本地测试通过：
+    1、首先调用createTask创建实时查询模板。
+    2、调用findTaskResult，传入bool查询语句（三种基本查询条件must、must_not、should）即可。
+
+8月12日（明天）工作计划：
+	编写dpd业务；
+	练习设计模式。
+

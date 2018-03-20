@@ -1,0 +1,6 @@
+8月21实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月21日（今天）完成的工作和学习如下：
+	整理KPI接口文档，添加php发送post请求+解析复杂json的例子；	
+	先登陆跳板机，再登陆目标机执行命令的shell脚本编写

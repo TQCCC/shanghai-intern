@@ -1,0 +1,50 @@
+﻿6月29实习生工作日报-唐庆昌
+
+6月29日（今天）完成的工作和学习如下：
+	1、在linux上安装了maven和Sonatype nexus
+	2、借助工具nexus，在linux上将maven私服搭建成功，项目可以成功引入本地maven服务器仓库中存放的jar包。
+		(a)maven项目打包命令：mvn clean package
+		(b)将maven项目发布到nexus命令：mvn deploy
+			并且pom.xml中配置
+				<distributionManagement>
+    				<repository>
+				      <id>releases</id>		<!-- Release版本发布地址-->
+				      <url>http://192.168.2.60:8081/nexus/content/repositories/releases</url>
+			    	</repository>
+			    	<snapshotRepository>
+      					<id>snapshots</id>		<!-- Snapshot版本发布地址-->
+      					<url>http://192.168.2.60:8081/nexus/content/repositories/snapshots</url>
+    				</snapshotRepository>
+  				</distributionManagement>
+
+  			settings.xml中配置管理员登录信息：
+  				<servers>
+					<server>
+						<id>releases</id>
+						<username>admin</username>
+						<password>admin123</password>
+					</server>
+					<server>
+						<id>snapshots</id>
+						<username>admin</username>
+						<password>admin123</password>
+					</server>
+				</servers>
+		发布的过程中遇到的问题：
+			只能发布到releases仓库，发布到snapshots仓库时返回400 bad request.
+		解决：
+			查到原来是要在pom.xml中的版本号中加入-SNAPSHOT后缀，后改为<verison>x.x.x-SNAPSHOT</version>
+			问题解决。
+
+	浑身成就感！
+
+	3、进一步熟悉了maven的进阶配置和nexus的使用方法。
+	4、初步学习了rocketMQ
+
+6月30日（明天）工作计划：
+	1、学习Jekins。
+	2、如果有需求，继续完善Maven私服。
+	3、学习linux、shell
+	4、学习rocketMQ
+	5、学习hive、学习Hadoop
+	6、继续用Python编写模板项目生成其它项目工具

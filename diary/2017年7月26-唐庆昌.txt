@@ -1,0 +1,19 @@
+7月26实习生工作日报-唐庆昌
+
+7月26日（今天）完成的工作和学习如下：
+	接入大众点评CAT（Central application tracking）监控系统，短信和邮件报警功能接入成功，
+	至此完成了Controller调用(core)、日志error级别的监控(core)、Dubbo调用(demo项目)、短信和邮件报警功能(assistant)。
+	
+	简单记录下所有配置和实现方法：
+		监控Controller：注解式AOP；
+		监控error级别日志：自定义log4j2的Appender，判断日志级别，如果是error才向CAT发送error事件；
+		监控dubbo：需要引入cat-monitor包，使用Dubbo的Filter实现；
+		短信和邮箱关键都要在CAT服务器中的/data/appdatas/cat/server.xml中alert-machine="true"开启报警服务
+
+7月27日（明天）工作计划：
+	完善CAT报警功能；
+	学习Shell、MySQL、Hadoop、HiveQL
+
+感受：
+	接入第三方功能之前，阅读文档，仔细检查关键配置文件在哪个地方
+

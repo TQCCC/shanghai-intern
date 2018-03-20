@@ -1,0 +1,7 @@
+7月6实习生工作日报-唐庆昌
+
+7月6日（今天）完成的工作和学习如下：
+	1、在CentOS上完成了java的安装
+	2、学习了memcached、Map/Reduce、Hadoop。
+7月7日（明天）工作计划：
+    学习Hadoop、Hive、zookeeper、Dubbo

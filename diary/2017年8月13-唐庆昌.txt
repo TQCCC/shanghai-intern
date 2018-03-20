@@ -1,0 +1,24 @@
+8月13实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月13日（今天）完成的工作和学习如下：
+	成功在神策服务器上安装elasticsearch5.5.1：
+
+	安装过程遇到的问题：
+	第一步：
+		解压启动#./elasticsearch
+		启动成功，本地访问成功curl 127.0.0.1:9200
+
+	第二步：
+		通过外网访问失败，connection refused
+		修改配置elasticsearch.yml，添加
+		network.host: 本机ip
+		http.host: 0.0.0.0
+		问题解决。
+
+		解决方法来自elastic官方论坛，解释得很清楚：
+		https://discuss.elastic.co/t/bound-or-publishing-to-a-non-loopback-or-non-link-local-address-enforcing-bootstrap-checks/75263/5
+
+
+8月14日（明天）工作计划：
+	编写接口文档

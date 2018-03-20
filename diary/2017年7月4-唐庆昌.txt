@@ -1,0 +1,32 @@
+﻿7月4实习生工作日报-唐庆昌
+
+7月4日（今天）完成的工作和学习如下：
+	1、编写了huixian-core项目中消息模块的测试程序。
+		4项配置aliyun.ProducerId、aliyun.AccessKey、aliyun.SecretKey、aliyun.ConsumerId
+		要依据/usr/local/java-server-conf/server.conf配置文件中读取到的mode(dev/prd/pre/pre2)，
+		而添加到对应的配置文件。目前的开发模式(dev)中，这几项配置应放到const_dev.properties中。
+
+		查看了一通代码之后，对aliyun RocketMQ的用法已经基本熟悉。
+		Consumer对象首先需要订阅(subscribe) 某个Topic，然后注册一个实现了MessageListener接口的类，
+		在consume方法中编写消费逻辑。
+		Producer调用send方法发送消息即可。
+
+		MQ是异步的，消息生产者发送消息时并不知道消费者什么时候才接受到消息，只要消息队列服务不挂，
+		消费者任何时候都可以去消息集群获取到消息。比如用户请求激增的一个场景，来到的消息先存在消息队列，
+		服务器压力小，可减少宕机现象，防止数据丢失。
+		
+		MQ还能实现系统解耦，应用场景很多，可以将一个系统解耦为Consumer和Producer，Consumer不需关心Producer
+		对消息的处理。
+		
+		RocketMQ还能保证消息的有序性。
+
+	2、继续修改了模板项目生成其它项目的python脚本
+		解决了windows和linux目录分隔符不同的问题
+		改为复制出一份新项目，而不是直接修改原来项目
+		新增可选参数-g或-s，-g表示先git clone，再转换；-s表示直接复制转换
+	3、学习了memcached、zookeeper
+
+7月4日（明天）工作计划：
+	编写huixian-core项目中消息模块的测试程序
+	学习memcached、zookeeper
+	练习linux shell

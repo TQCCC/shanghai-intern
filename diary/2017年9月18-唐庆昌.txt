@@ -1,0 +1,21 @@
+9月18实习生工作日报-唐庆昌
+
+9月18日（今天）完成的工作和学习如下：
+	1、IVR电话脚本优化，已经在神策2服务器启动，路径：
+	/var/www/python-app/auto_tel/auto_tel.py
+
+	观察其运行状况:
+	tail -f ./nohup.out
+
+	杀死其进程：
+	ps -ef|grep auto_tel
+	kill -9 <pid>
+
+	重启：
+	nohup python auto_tel.py config/auto_tel_pdt.ini &
+
+	2、华云电话接口对接进行中，接口文档对接口参数的解释不清，等待华云方面回复
+	
+	3、python工程规范、打包学习
+	
+

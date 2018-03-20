@@ -1,0 +1,10 @@
+8月28实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月28日（今天）完成的工作和学习如下：
+	1、rabbitmq环境搭建、学习，并且与kafka、rocketmq进行比较；
+	2、打工圈每天发帖数量统计报表
+
+8月29日（明天）工作计划：
+
+	python连接impala

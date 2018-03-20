@@ -1,0 +1,7 @@
+8月27实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月27日（今天）完成的工作和学习如下：
+	1、审查催收报表SQL代码，对照需求，保证逻辑正确，尝试覆盖所有催收需求报表的测试用例
+	2、jenkins shell脚本优化
+	3、rabbitmq搭建、整合springboot

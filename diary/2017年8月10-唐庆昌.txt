@@ -1,0 +1,10 @@
+8月10实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月10日（今天）完成的工作和学习如下：
+	本人孤陋寡闻，原来maven的依赖顺序和pom文件中的dependency的编写顺序是有关的；
+	
+	ES服务模块主要程序逻辑和实现都编写测试完毕；
+
+8月11日（明天）工作计划：
+	解决Springboot和ES api兼容问题

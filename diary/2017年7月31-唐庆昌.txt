@@ -1,0 +1,117 @@
+7月31实习生工作日报-唐庆昌
+
+7月31日（今天）完成的工作和学习如下：
+	对于比较简单的查询:
+		用户发推特的例子：
+		SQL:
+		    use gb;
+		    select * from user;
+		ES:
+		    curl -XGET localhost:9200/gb/user/_search/
+		    以下简化为GET
+		SQL:
+		    select name from user;
+		ES:
+		GET /gb/tweet/_search
+		{
+			/*...queries*/
+		    "_source":["name"]
+		}
+		条件查询:
+		SQL:
+		select * from tweet where tweet=elasticsearch
+		ES:
+		{
+		  "query": {
+		    ["match"|"term"]: {
+		      "tweet":"elasticsearch"		
+		      //ES偏向模糊查询，用term精确查询时由于ES的分析原理，偶尔会结果不对，
+		      //解决：mappings设置要精确查询的字段："index":"not_analyzed"（不经过过分析阶段）
+		    }
+		  }
+		}
+		多条件:
+		SQL: and|or|not
+		ES:
+		{
+		    "query":{
+		        "bool"{
+		            ["must":{some_query}](必须满足的条件，相当于and)
+		            ["must_not":{some_query}](必须不满足的条件，相当于not)
+		            ["shot":{some_query}](至少一个满足的条件，相当于or)
+		        }
+		    }
+		}
+
+		分页（ES搜索结果默认是按照相关性打分(score)来排序，
+		即与查询条件的匹配程度，score越高，排得越靠前）:
+		SQL:
+		    select * from user limit 2, 3;
+		ES:
+		{
+		    "from":2,
+		    "size":3
+		}
+
+		连接查询：
+		SQL:
+		    select * from user union all select * from tweet
+		ES:
+		    GET /gb/user,tweet/_search
+		
+		子查询：
+			要实现类似SQL的子查询稍有复杂，需要提前设置type、document之间的父子关系或设置类型为nested；
+			nested结构是Elasticsearch提供关系存储的一种特殊的结构，是NOSQL的一种高级特性，
+			在传统的关系型sql中，很难做到一行记录中存储某个实体以及附属的内容，比如某个用户下评论数据，
+			或某个订单下的所有商品等这种关系比较强的内容。
+
+		聚合（多用于统计，类似SQL的group by）：
+			例子：文档结构（表）：
+			{
+			  "properties": {
+			    "admin_uid": {
+			      "type": "integer"
+			    },
+			    "dgq_uid": {
+			      "type": "integer"
+			    },
+			    "act_time": {
+			      "type": "date"
+			    },
+			    "act_key": {
+			      "type": "string",
+			      "fielddata": true
+			    }
+			  }
+			}
+			统计每个操作员的每种操作进行了多少次：
+			GET /dgq/act
+			{
+			  "aggs": {
+			    "admin_uids": {
+			      "terms": {
+			        "field": "admin_uid"
+			      },
+			      /*
+			      	more diffrent aggs in the same level.
+			      */
+			      "aggs": {		//a subaggregation
+			        "act_num": {
+			          "terms": {
+			            "field": "act_key"
+			          }
+			        }
+			      }
+			    }
+			  }
+			}
+
+		除此外ES也提供了很多常见功能，排序、去重、模糊查询等
+
+		总结：
+		1、对业务人员，json查询结果没有SQL的结构化查询结果可读性好。
+		2、ES查询速度快，但是耗费内存大。
+
+
+8月1日（明天）工作计划：
+	继续比较ES与MySQL的性能、价格

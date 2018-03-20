@@ -1,0 +1,31 @@
+﻿7月5实习生工作日报-唐庆昌
+
+7月5日（今天）完成的工作和学习如下：
+	1、再次修改了根据模板项目生成其它项目的python脚本
+		a.添加了对Maven工程中pom.xml文件的处理
+		b.优化了程序结构，将遍历工程目录、读取文件内容和修改文件内容的规则的逻辑分开
+		c.修改了正则表达式
+		d.添加了提示信息
+	2、尝试在Linux上安装RocketMQ。
+		参照aliyun在github上放的官方教程，本以为是很简单的事情，但安装过程中提示需要jdk，机器只有jre，
+		便利用yum工具下载安装jdk
+		输入命令yum -y list java*
+		列出可选项目后，再输入 yum install jdk包名就开始安装，配置环境变量。
+		待解决：
+		输入javac一直出现：
+		Error occurred during initialization of VM
+		java/lang/NoClassDefFoundError: java/lang/Object
+
+	3、听了神策的产品介绍会，了解了神策这个服务的使用方法，主要用来分析用户行为，收集用户数据，也有程序接口，感觉
+	挺有意思的。
+
+7月6日（明天）工作计划：
+	学习分布式、大数据
+	学习dubbo、hadoop、hive、zookeeper等分布式中常见工具
+	继续学习memcached、redis
+	练习linux shell
+
+感受：每天有学不完的工具和概念。
+
+
+

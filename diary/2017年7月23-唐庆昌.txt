@@ -1,0 +1,10 @@
+7月23实习生工作日报-唐庆昌
+
+7月23日（今天）完成的工作和学习如下：
+	1、MySQL触发器、存储过程；
+	2、hadoop mapreduce demo：数据去重、排序；
+	3、了解了后端RESTful API文档生成工具Swagger，方便前后端开发分离，甚至能为前端生成mock service，方便测试。
+7月24日（明天）工作计划：
+	CAT监控系统接入；
+	jenkins搭建。
+

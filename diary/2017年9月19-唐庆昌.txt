@@ -1,0 +1,13 @@
+9月19实习生工作日报-唐庆昌
+
+9月19日（今天）完成的工作和学习如下：
+	1、华云电话接口调通；
+	接口返回结果正常，尚未能打电话，正在等华云方面回复
+
+	2、IVR上线
+	启动IVR脚本：
+	nohup python ivr.py config/ivr_pdt.ini >> /data01/huixian/python/project/IVRLog/IVR.log 2>&1 &
+
+	停止：
+	ps -ef | grep ivr
+	kill -9 <pid>

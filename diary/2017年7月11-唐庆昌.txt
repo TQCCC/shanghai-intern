@@ -1,0 +1,20 @@
+7月11实习生工作日报-唐庆昌
+
+7月11日（今天）完成的工作和学习如下：
+	1、在windows上搭建了本地rocketmq环境，producer和consumer的demo程序运行成功。
+	2、利用dubbo为core项目添加了RPC模块，类：RPCService接口，RPCServiceImpl，RPCManager，IRPCConsumeCallBack，已经测试运行成功
+		RPCService接口：provider呈现给consumer的接口
+		RPCServiceImpl：RPCService实现类
+
+		RPCManager：实现了Spring的InitializingBean接口的类，在xml中对其进行配置，
+		程序开始运行时根据属性type加载成Provider或Consumer。
+
+		IRPCConsumeCallBack：consumer收到消息后的回调接口
+
+	3、阅读了记加班-借贷简介	
+7月12日（明天）工作计划：
+	
+	修改RPC模块，打算利用Java反射机制进行优化。
+	熟悉记加班-借贷的业务
+
+

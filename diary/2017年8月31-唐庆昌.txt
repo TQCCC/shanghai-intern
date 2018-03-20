@@ -1,0 +1,16 @@
+8月31实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月31日（今天）完成的工作和学习如下：
+	报表需求SQL全部完成
+
+9月1日（明天）工作计划：
+	导数据逻辑python脚本编写
+	
+	方案：
+	每天一次：
+	1、从业务主库全量导所需的表和字段到大数据中心
+	2、hiveQL筛选出结果集合，生成结果集外部表
+	3、外部结果表将通过同步工具包elasticsearch-hadoop-5.5.1.jar全量同步数据到Elasticsearch
+
+	python脚本需要实现第1、2点逻辑

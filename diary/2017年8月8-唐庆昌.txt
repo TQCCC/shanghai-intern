@@ -1,0 +1,19 @@
+8月8实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月8日（今天）完成的工作和学习如下：
+	ES中文聚合出错：
+		某字段中有中文，想要精确搜索或精确聚合时，结果中中文词汇会被分离成多个字;
+		如：聚合标题为"你好"的文章时，会被分成"你"、"好"；要精确搜索"你好"，却没有结果。
+
+	解决：
+		定义字段时，加入"index":"not_analyzed"，不经过分析拆term阶段，解决！
+		具体理论：https://www.elastic.co/guide/cn/elasticsearch/guide/current/mapping-intro.html
+
+8月9日（明天）工作计划：
+
+
+感受：
+
+
+{"script": "if(_value.equals('thread.del') )return '1';else return '';"}

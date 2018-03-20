@@ -1,0 +1,25 @@
+﻿6月27实习生工作总结-唐庆昌
+
+6月27日完成的工作和学习如下
+	1、熟悉了git的使用。
+	2、编写了com.huixian.core包缓存功能的单元测试。
+		a.测试了实现了CacheContainer接口的各个类，LocalCacheContainer, RedisCacheContainer, ThreadCacheContainer。
+		b.测试了CacheKeyGenerator的静态方法。
+		c.测试了RedisService类。
+	3、熟悉了Redis的使用
+	4、初步进入了模板项目生成其它项目的Python脚本的编写。
+	5、初步进入了maven仓库的搭建工作。
+
+6月28日（今日）工作计划：
+	1、熟悉公司的基础架构代码。
+	2、学习分布式系统、学习消息的概念和应用。
+	3、编写目前公司的Java基础架构的各个功能的单元测试。
+	4、继续用Python编写模板项目生成其它项目的工具，提升生产力。
+	5、继续进行公司私有maven仓库的搭建。
+
+6月29日（明天）工作计划：
+	1、若项目生成工具和maven仓库的搭建没有完成，则继续这两项任务。
+	2、编写Java基础架构com.huixian.core包rocket mq消息的单元测试。
+	3、继续学习分布式、Redis。
+
+

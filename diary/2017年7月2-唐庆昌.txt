@@ -1,0 +1,43 @@
+﻿7月2实习生工作日报-唐庆昌
+
+7月2日（今天）完成的工作和学习如下：
+	1、成功在本机安装了自动构建/测试工具jenkins，
+	jenkins：一款持续集成引擎，功能：
+		持续、自动地构建/测试软件项目；
+		监控一些定时执行的任务。
+	jenkins易于理解，使用简单，功能强大。它省去了很多开发团队检查代码的经历。
+
+	jenkins主要工作流程：build->test->package->deploy
+	运行jenkins服务命令：java -jar jenkins.war
+
+	在设置好了Maven、JDK等后，一个jenkins job的主要设置项有：
+		a、工程库URL，比如项目在git仓库的地址
+		b、在构建或测试完成时，需要通知的email地址，要事先配SMTP服务器
+		c、触发器日程表配置（定时任务：检查代码变更或构建一次）：
+			常用：
+				*/5 * * * * 每5分钟运行一次定时任务
+				H 2 * * * 每天2点运行一次定时任务
+
+		d、设置构建后继操作：可以选择发布到Maven仓库、发送email等
+
+
+	2、学习了JMS(Java Message Service)的概念，再学习了什么是MQ，在通过编写了一个RocketMQ的demo体会了用法。
+	JMS：	应用程序之间的进行通信的程序接口，异步、低耦合、高可用。
+			两种模型Point-to-Point、Publish-and-Subscribe。
+			JMS是一种规范，市面上绝大多数消息中间件都实现了这个规范。
+	RocketMQ：实现了JMS规范的一个消息中间件，高性能、高吞吐
+	RocketMQ的基本组成包括nameserver、broker、producer、consumer四种节点，前两种构成服务端，后两种在客户端上。
+
+	明天将借助以上知识开始尝试编写公司Java基础架构huixian-core项目中消息模块的测试。
+
+	3、修改了CacheContainer测试类的程序结构
+
+7月3日（明天）工作计划：
+	编写huixian-core项目中消息模块的测试程序
+	练习linux shell
+
+	
+
+
+
+	

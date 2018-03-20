@@ -1,0 +1,19 @@
+7月19实习生工作日报-唐庆昌
+
+7月19日（今天）完成的工作和学习如下：
+	1、熟悉了payment和dataMarket的源码，关注了事务的设置
+	2、HiveQL入门，并且选出数据：
+		a.时间处理，与MySQL相同：
+		UNIX时间戳转日期: from_unixtime: from_unixtime(bigint unixtime[, stringformat]) 
+		如：select count(*) from jll_thread where from_unixtime(adddate,'yyyyMM')=201601;
+
+		日期转UNIX时间戳:unix_timestamp(string date) 
+		如：select unix_timestamp(1418298004)
+
+		b.hive目前只支持union all，不支持union
+
+
+7月20日（明天）工作计划：
+	jenkins持续集成工具搭建；
+	学习hadoop、hive；
+

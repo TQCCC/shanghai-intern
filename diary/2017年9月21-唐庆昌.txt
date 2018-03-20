@@ -1,0 +1,35 @@
+9月21实习生工作日报-唐庆昌
+
+9月21日（今天）完成的工作和学习如下：
+	
+	1、risk代码阅读
+
+	2、Atom编辑器配置Python环境插件总结，酷炫编程体验：
+		1、格式化工具：atom-beautify：
+		支持多种语言的格式化插件，安装完成后会提示安装所需程序包：
+			pip install yapf
+			pip install autopep8
+
+		使用：
+			ctrl+alt+b即可格式化代码
+
+		2、atom-runner
+		使用：
+			ctrl+shift+b运行代码，运行结果输出在内嵌控制台中
+
+		3、linter-flake8
+			代码错误提示工具
+			需要pip install flake8
+
+		4、python-tools
+                        找到定义、查找调用的工具
+			Goto definitions, show usages, refactor/rename and more for python files.
+
+			Goto definitions: ctrl+alt+g
+			Show usages: ctrl+alt+u
+
+		5、terminal-plus
+			内嵌控制台！
+
+		6、refactor
+			简单重构！

@@ -1,0 +1,41 @@
+7月17实习生工作日报-唐庆昌
+
+7月17日（今天）完成的工作和学习如下：
+	1、完善了demo项目的dubbo模块：
+		配置方式改为xml与注解结合，使用xml方式配置registry、protocol等，这些对象字段较多，不易使用代码方式配置；
+		提供者和消费者只需分别添加@Service和@Reference即可；
+		
+		使用方法：
+		a、提供者要对外发布新的接口，运行dubbo包下的release-dubbo-api.bat，就可以打包dubbo包下的接口和DTO，并发布到maven仓库，
+		在实现类上添加@Service，不建议在dubbo包下写对外接口的实现；
+
+		b、消费者在pom.xml中引入接口包的定位，在对象上添加@Reference即可使用。
+
+	2、linux脚本编写：
+		利用expect这个工具实现了ssh登录和ssh远程执行
+		expect是一个能实现自动和交互式任务的解释器，它也能解释常见的shell语法命令
+
+		自动输密码远程登录：
+			set timeout 3				#expect中等待命令的输出信息的超时时间
+			spawn ssh 用户名@远程地址 	#fork一个子进程执行ssh命令
+			expect "*password*"			#匹配到 'user_name@ip_string's password:' 
+			send "你的密码\r"			
+			expect "*#"					#登陆成功，匹配到命令行状态
+			send "ls\r"					#再执行一些自己喜欢的命令
+			interact					#进入交互模式
+		自动输密码远程执行，道理一样：
+			set one [lindex $argv 0]	#传参方法
+			set two [lindex $argv 1]
+
+			set timeout 3
+			spawn ssh -t -p 22 用户名@远程地址 "ls $one $two\r"
+			expect "*password*"
+			send "密码\r"
+			interact
+
+		以上代码保存为 xxx.sh，本机执行expect xxx.sh
+
+7月18日（明天）工作计划：
+	继续熟悉payment和数据仓库业务
+
+

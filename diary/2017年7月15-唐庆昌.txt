@@ -1,0 +1,17 @@
+7月15实习生工作日报-唐庆昌
+
+7月15日（今天）完成的工作和学习如下：
+	1、redis学习：
+	主从复制特点和过程：slave同步master的数据，配置文件中slaveof <masterip><masterport>；
+	事务控制：multi开启，exec执行，discard回滚，watch监控；
+	乐观锁：某个client，若更新数据后版本号被修改，则取消修改事务回滚，对某key使用watch命令即可；
+	持久化：snapshotting & append-of-file；
+	发布订阅：系统解耦，可实现简单消息队列系统，命令：subscribe、public；
+
+	2、zookeeper学习：
+		zkCli概念和基础命令
+	3、熟悉payment业务
+
+7月16日（明天）工作计划：
+	熟悉payment业务
+	学习

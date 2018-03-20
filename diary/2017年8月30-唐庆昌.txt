@@ -1,0 +1,8 @@
+8月30实习生工作日报-唐庆昌
+实习以来全部日志：https://github.com/TQCCC/internship-diary
+
+8月30日（今天）完成的工作和学习如下：
+	KPI报表还缺两个字段，python脚本尚未开始
+
+8月31日（明天）工作计划：
+	KPI报表
